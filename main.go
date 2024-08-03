@@ -1,9 +1,12 @@
 package main // This programs is built into an executable code.
 
 import (
+	"Go/arrays"
 	"Go/conditionals"
+	"Go/errors"
 	"Go/functions"
 	"Go/interfaces"
+	"Go/loops"
 	"Go/structs"
 	"Go/variables"
 	"fmt"
@@ -45,4 +48,21 @@ func main() {
 	fmt.Println("----- Interfaces Demo -----")
 	interfaces.InterfaceDemo()
 	interfaces.StructInterfaceTypes()
+
+	fmt.Println()
+	fmt.Println("----- Errors Demo -----")
+	errors.ErrorDemo()
+	errors.CustomError()
+	errors.ErrorPackage()
+
+	fmt.Println()
+	fmt.Println("----- Loops Demo -----")
+	loops.ForDemo()
+
+	fmt.Println()
+	fmt.Println("----- Arrays Demo -----")
+	arrays.ArrayDemo()
+	arrays.VariadicDemo()
+	arrays.MatrixDemo()
+	arrays.RangeDemo()
 }
