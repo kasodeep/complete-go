@@ -7,6 +7,7 @@ import (
 	"Go/functions"
 	"Go/interfaces"
 	"Go/loops"
+	"Go/maps"
 	"Go/structs"
 	"Go/variables"
 	"fmt"
@@ -65,4 +66,8 @@ func main() {
 	arrays.VariadicDemo()
 	arrays.MatrixDemo()
 	arrays.RangeDemo()
+
+	fmt.Println()
+	fmt.Println("----- Maps Demo -----")
+	maps.MapsDemo()
 }
