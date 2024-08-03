@@ -1,4 +1,4 @@
-package main
+package conditionals
 
 import "fmt"
 
@@ -19,7 +19,7 @@ func billingCost(plan string) float64 {
 	}
 }
 
-func main() {
+func SwitchDemo() {
 	plan := "pro"
 	fmt.Printf("The cost for a %s plan is $%.2f\n", plan, billingCost(plan))
 }

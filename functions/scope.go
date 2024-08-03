@@ -1,8 +1,8 @@
-package main
+package functions
 
-func splitEmail(email string) (string, string) {	
+func SplitEmail(email string) (string, string) {
 	username, domain := "", ""
-	
+
 	for i, r := range email {
 		if r == '@' {
 			username = email[:i]

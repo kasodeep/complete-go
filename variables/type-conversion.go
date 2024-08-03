@@ -1,8 +1,8 @@
-package main
+package variables
 
 import "fmt"
 
-func main() {
+func TypeConversion() {
 	// type conversion.
 	accountAgeFloat := 2.6
 	accountAgeInt := int32(accountAgeFloat)

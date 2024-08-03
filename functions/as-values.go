@@ -1,6 +1,6 @@
-package main
+package functions
 
-func reformat(message string, formatter func(string) string) string {
+func Reformat(message string, formatter func(string) string) string {
 	message = formatter(message)
 	message = formatter(message)
 	message = formatter(message)

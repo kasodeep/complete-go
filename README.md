@@ -23,3 +23,14 @@
 - Go has garbage collection, which allows to `clean up` resources.
 - However, it does not have `JVM` like Java, allowing minimal memory usage.
 - A small code is added known as `Go Runtime`, which handles memory management.
+
+### Functions:
+
+- `defer` keyword is used to close a resource.
+- The parameters will be checked but the function will be called before the current function returns.
+
+### Interfaces:
+
+1. Keep interfaces `small`.
+2. Interfaces should have `no knowledge` about satisfying types. (Ex: isFireTruck())
+3. Interfaces are not `classess`.

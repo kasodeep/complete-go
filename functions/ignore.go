@@ -1,11 +1,11 @@
-package main
+package functions
 
 /*
 	Go doesn't allow unused variables.
 	Hence we can ignore them using the _ symbol.
 	Also, a function in Go can return multiple values.
 */
-func getProductMessage(tier string) string {
+func GetProductMessage(tier string) string {
 	quantityMsg, priceMsg, _ := getProductInfo(tier)
 	return "You get " + quantityMsg + " for " + priceMsg + "."
 }

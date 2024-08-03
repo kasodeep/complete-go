@@ -1,9 +1,9 @@
-package main
+package functions
 
-func calculateFinalBill(costPerMessage float64, numMessages int) float64 {
+func CalculateFinalBill(costPerMessage float64, numMessages int) float64 {
 	costForMessages := calculateBaseBill(costPerMessage, numMessages)
 	discount := calculateDiscount(numMessages)
-	return float64(costForMessages) - discount * float64(costForMessages)
+	return float64(costForMessages) - discount*float64(costForMessages)
 }
 
 func calculateDiscount(messagesSent int) float64 {

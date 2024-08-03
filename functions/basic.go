@@ -1,4 +1,4 @@
-package main
+package functions
 
 import "fmt"
 
@@ -10,16 +10,15 @@ func concat(s1 string, s2 string) string {
 
 // hp & damage have the same type int.
 // When the same type parameter are next to each other.
-func addToDatabase(hp, damage int, name string, level int) {
-	// ?
+func AddToDatabase(hp, damage int, name string, level int) {
+	newHp := damage * level
+	fmt.Println("Name:", name, "New HP:", newHp)
 }
 
 func test(s1 string, s2 string) {
 	fmt.Println(concat(s1, s2))
 }
 
-func main() {
+func FunctionsDemo() {
 	test("Lane,", " happy birthday!")
-	test("Elon,", " hope that Tesla thing works out")
-	test("Go", " is fantastic")
 }

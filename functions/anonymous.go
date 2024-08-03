@@ -1,4 +1,4 @@
-package main
+package functions
 
 import "fmt"
 
@@ -11,13 +11,13 @@ func printReports(intro, body, outro string) {
 	printCostReport(func(a string) int {
 		return 3 * len(body)
 	}, body)
-	
+
 	printCostReport(func(a string) int {
 		return 4 * len(outro)
 	}, outro)
 }
 
-func main() {
+func TestReports() {
 	printReports(
 		"Welcome to the Hotel California",
 		"Such a lovely place",
