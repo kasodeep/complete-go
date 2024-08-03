@@ -1,16 +1,18 @@
 package main // This programs is built into an executable code.
 
 import (
-	"Go/arrays"
-	"Go/conditionals"
-	"Go/errors"
-	"Go/functions"
-	"Go/interfaces"
-	"Go/loops"
-	"Go/maps"
-	"Go/structs"
-	"Go/variables"
 	"fmt"
+
+	"github.com/kasodeep/complete-go/arrays"
+	"github.com/kasodeep/complete-go/conditionals"
+	"github.com/kasodeep/complete-go/errors"
+	"github.com/kasodeep/complete-go/functions"
+	"github.com/kasodeep/complete-go/interfaces"
+	"github.com/kasodeep/complete-go/loops"
+	"github.com/kasodeep/complete-go/maps"
+	"github.com/kasodeep/complete-go/pointers"
+	"github.com/kasodeep/complete-go/structs"
+	"github.com/kasodeep/complete-go/variables"
 )
 
 func main() {
@@ -70,4 +72,9 @@ func main() {
 	fmt.Println()
 	fmt.Println("----- Maps Demo -----")
 	maps.MapsDemo()
+
+	fmt.Println()
+	fmt.Println("----- Pointers Demo -----")
+	pointers.PointersDemo()
+	pointers.ReceiverDemo()
 }

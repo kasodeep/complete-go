@@ -9,7 +9,11 @@
 ```bash
  go mod init <module-name>
  go run main.go
+ go build && ./<module-name>
+ go install
 ```
+
+Build and install locally in admin folder.
 
 ### Compilation:
 
@@ -47,3 +51,21 @@
 1. Go has `errors` package, which allows to create custom errors.
 2. We should avoid using `panic` and `recover` keywords.
 3. Alternative to that is the `Log.Fatal()` method.
+
+### Pointers:
+
+1. The main reason should be to `change values` in function calls.
+2. Pointers are `dangerous` and can lead to bug.
+
+### Packages:
+
+1. The packages beside main, are library packages `exporting` some function.
+2. Hide `internal` logic.
+3. Don't change APIS.
+4. Don't `export functions` from the main package.
+5. Package should have no information about their `dependents`.
+
+### Modules:
+
+1. A `repository` contains one or more modules.
+2. A module is a `collection` of Go packages that are released together.
