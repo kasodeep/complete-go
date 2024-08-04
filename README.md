@@ -69,3 +69,9 @@ Build and install locally in admin folder.
 
 1. A `repository` contains one or more modules.
 2. A module is a `collection` of Go packages that are released together.
+
+### Channels:
+
+1. A send/receive to nil channel (create without make) `blocks` forever.
+2. A send to close channel `panicks`.
+3. A receive from closed channel return the `zero value` immediately.
