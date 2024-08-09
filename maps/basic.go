@@ -48,7 +48,7 @@ func MapsDemo() {
 		"John": 37,
 		"Mary": 21,
 	}
-	fmt.Println(ages["Mary"])
+	fmt.Println("Age of Mary:", ages["Mary"])
 	delete(ages, "Mary")
 
 	value, ok := ages["Mary"]

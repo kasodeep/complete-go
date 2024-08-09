@@ -23,4 +23,5 @@ func IfDemo() {
 	if length := getLength(email); length < 1 {
 		fmt.Println("Email is invalid")
 	}
+	fmt.Println()
 }

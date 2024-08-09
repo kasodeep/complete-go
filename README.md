@@ -4,6 +4,14 @@
 2.  Go has a `fast compilation` speed than Rust, C++, Java.
 3.  It doesn't have the same `execution speed` as other languges.
 
+### Run:
+
+```bash
+go run main.go
+go run main.go -package=channels
+make run -package=channels
+```
+
 ### Commands:
 
 ```bash

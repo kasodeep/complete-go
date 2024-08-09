@@ -3,7 +3,7 @@ package functions
 import "fmt"
 
 func printReports(intro, body, outro string) {
-	// Function with no name and defining body while passing.
+	// function with no name and defining body while passing.
 	printCostReport(func(a string) int {
 		return 2 * len(intro)
 	}, intro)
@@ -25,6 +25,7 @@ func TestReports() {
 	)
 }
 
+// this function takes a function as a value.
 func printCostReport(costCalculator func(string) int, message string) {
 	cost := costCalculator(message)
 	fmt.Printf(`Message: "%s" Cost: %v cents`, message, cost)

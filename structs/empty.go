@@ -3,12 +3,12 @@ package structs
 import "fmt"
 
 func EmptyStruct() {
-	// anonymous empty struct type
+	// anonymous empty struct type.
 	empty := struct{}{}
 
-	// named empty struct type
+	// named empty struct type.
 	type emptyStruct struct{}
 	empty = emptyStruct{}
 
-	fmt.Println(empty)
+	fmt.Println("Empty Struct:", empty)
 }

@@ -14,8 +14,8 @@ func YearsUntilEvents(age int) (yearsUntilAdult, yearsUntilDrinking, yearsUntilC
 	if yearsUntilCarRental < 0 {
 		yearsUntilCarRental = 0
 	}
-	// Automatically returns the three returned variables defined in signature.
+	// automatically returns the three returned variables defined in signature.
 	return
-	// We can still return explicitly.
+	// we can still return explicitly.
 	// return 5, 6, 7
 }

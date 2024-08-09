@@ -18,7 +18,7 @@ func EmbeddedDemo() {
 			model: "camry",
 		},
 	}
+
 	// embedded fields promoted to the top-level instead of lanesTruck.car.make
 	fmt.Printf("Embedded Fields (Make & BedSize): %s %d \n", lanesTruck.make, lanesTruck.bedSize)
-	fmt.Println(lanesTruck.frontWheel.radius)
 }

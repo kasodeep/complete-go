@@ -14,6 +14,7 @@ func ReceiverDemo() {
 	c := car{
 		color: "white",
 	}
+
 	c.setColor("blue")
-	fmt.Println(c.color)
+	fmt.Println("Color of car changed from white to:", c.color)
 }

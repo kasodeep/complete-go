@@ -46,4 +46,5 @@ func InterfaceDemo() {
 	for _, emp := range employees {
 		fmt.Printf("Name: %s, Salary: $%d\n", emp.getName(), emp.getSalary())
 	}
+	fmt.Println()
 }

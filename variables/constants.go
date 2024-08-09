@@ -10,4 +10,5 @@ func Constants() {
 
 	fmt.Println("Plan:", premiumPlanName)
 	fmt.Println("Plan:", basicPlanName)
+	fmt.Println()
 }

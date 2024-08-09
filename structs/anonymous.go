@@ -15,4 +15,5 @@ func Anonymous() {
 	}
 
 	fmt.Println(myCar)
+	fmt.Println()
 }

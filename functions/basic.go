@@ -17,8 +17,9 @@ func AddToDatabase(hp, damage int, name string, level int) {
 
 func test(s1 string, s2 string) {
 	fmt.Println(concat(s1, s2))
+	fmt.Println()
 }
 
 func FunctionsDemo() {
-	test("Lane,", " happy birthday!")
+	test("Lane,", " Happy birthday!")
 }

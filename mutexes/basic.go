@@ -46,5 +46,5 @@ func MutexDemo() {
 	}
 
 	time.Sleep(time.Millisecond)
-	fmt.Println(counter.val("somekey"))
+	fmt.Println("Count of somekey:", counter.val("somekey"))
 }

@@ -19,5 +19,7 @@ func Types() {
 	var costPerSMS float64
 	var hasPermission bool
 	var username string
+
 	fmt.Printf("Default Values: %v %.2f %v %q\n", smsSendingLimit, costPerSMS, hasPermission, username)
+	fmt.Println()
 }

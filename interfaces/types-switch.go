@@ -3,6 +3,7 @@ package interfaces
 import "fmt"
 
 func printNumericValue(num interface{}) {
+	// getting the type.
 	switch v := num.(type) {
 	case int:
 		fmt.Printf("%T\n", v)

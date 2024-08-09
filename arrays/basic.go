@@ -9,8 +9,9 @@ func ArrayDemo() {
 
 	primes := []int{2, 3, 5, 7, 11, 13}
 	fmt.Println("Primes:", primes, "Length:", len(primes))
+	fmt.Println()
 
-	// slice operation
+	// slice operation.
 	// slice are references and hence changes will be reflected in the original array.
 	fmt.Print("Slice Operations: ")
 	fmt.Println(primes[1:4], primes[1:], primes[:4], primes[:])
@@ -23,4 +24,5 @@ func ArrayDemo() {
 
 	// address.
 	fmt.Println("Primes address:", &primes[0])
+	fmt.Println()
 }

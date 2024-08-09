@@ -19,11 +19,12 @@ func printStrings(strings ...string) {
 }
 
 func VariadicDemo() {
-	fmt.Println("Variadic Demo:")
+	fmt.Print("Variadic Demo: ")
 	final := concat("Hello ", "there ", "friend!")
 	fmt.Println(final)
 
 	// spread operator.
 	names := []string{"bob", "sue", "alice"}
 	printStrings(names...)
+	fmt.Println()
 }

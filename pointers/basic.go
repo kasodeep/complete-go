@@ -14,9 +14,11 @@ func PointersDemo() {
 
 	myString := "hello"
 	myStringPtr := &myString
-	fmt.Println(myStringPtr)
 
-	fmt.Println(*myStringPtr)
+	fmt.Println(myStringPtr)
+	fmt.Println()
+
+	fmt.Println("Original:", *myStringPtr)
 	*myStringPtr = "world"
-	fmt.Println(myString)
+	fmt.Println("Changed via Pointer:", myString)
 }
