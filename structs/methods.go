@@ -13,7 +13,7 @@ func (r *rect) area() int {
 }
 
 func StructMethods() {
-	var r = rect{
+	r := rect{
 		width:  5,
 		height: 10,
 	}

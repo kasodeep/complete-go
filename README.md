@@ -83,3 +83,14 @@ Build and install locally in admin folder.
 1. A send/receive to nil channel (create without make) `blocks` forever.
 2. A send to close channel `panicks`.
 3. A receive from closed channel return the `zero value` immediately.
+
+## BuiltIn Functions
+
+1. make() - Provides a way to make maps, slices and channels with predefined size and capacity.
+2. len() - Returns the length of the array, slice, map and channel.
+3. append() - Appends a slice of type T to another slice.
+
+### Documentation:
+
+- `godoc` command is used to generate a proper documenting.
+- Not deep dived into the details.

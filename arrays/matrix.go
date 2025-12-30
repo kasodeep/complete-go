@@ -9,7 +9,7 @@ func createMatrix(rows, cols int) [][]int {
 		row := make([]int, 0)
 
 		for j := 0; j < cols; j++ {
-			row = append(row, i*j)
+			row = append(row, i+j)
 		}
 		matrix = append(matrix, row)
 	}
