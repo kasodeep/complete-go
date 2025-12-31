@@ -15,6 +15,7 @@ type contractor struct {
 	hoursPerYear int
 }
 
+// contractor implements the employee interface.
 func (c contractor) getName() string {
 	return c.name
 }
