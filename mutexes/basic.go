@@ -12,35 +12,35 @@ This ensures that we can control which goroutines can access certain data at whi
 */
 type safeCounter struct {
 	counts map[string]int
-	mux    *sync.Mutex
+	mux    sync.Mutex
 }
 
-func (sc safeCounter) inc(key string) {
+func (sc *safeCounter) inc(key string) {
 	sc.mux.Lock()
 	defer sc.mux.Unlock()
 	sc.slowIncrement(key)
 }
 
-func (sc safeCounter) val(key string) int {
+func (sc *safeCounter) val(key string) int {
 	sc.mux.Lock()
 	defer sc.mux.Unlock()
 	return sc.slowVal(key)
 }
 
-func (sc safeCounter) slowIncrement(key string) {
+func (sc *safeCounter) slowIncrement(key string) {
 	tempCounter := sc.counts[key]
 	time.Sleep(time.Microsecond)
 	tempCounter++
 	sc.counts[key] = tempCounter
 }
 
-func (sc safeCounter) slowVal(key string) int {
+func (sc *safeCounter) slowVal(key string) int {
 	time.Sleep(time.Microsecond)
 	return sc.counts[key]
 }
 
 func MutexDemo() {
-	counter := safeCounter{counts: make(map[string]int), mux: &sync.Mutex{}}
+	counter := safeCounter{counts: make(map[string]int), mux: sync.Mutex{}}
 	for i := 0; i < 10; i++ {
 		go counter.inc("somekey")
 	}
